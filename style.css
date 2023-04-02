@@ -1,0 +1,36 @@
+/*Primer selector (POR SIMPLE ETIQUETA HTML): Seleccionamos una etiqueta de html (en este caso el h2) */
+h2{
+    color: aqua;
+}
+/* SEGUNDO SELECTOR (POR ID) : Seleccionamos un elemento el cual tiene como propiedad id "titulo1" y para esto antecedemos el  "#"*/
+#titulo1{
+    color:blueviolet
+}
+/* TERCER SELECTOR (POR CLASE) : Se coloca el nombre de la clase asiganda a la etiqueta de html (en este caso "p") pero antecedemos el "." */
+.texto{
+    color: coral;
+}
+/* Para asignar un estilo de CSS a las etiquetas de "p" que contengan la clase de "texto" */
+p.especial{
+    color: mediumseagreen;
+}
+/* EL ORDEN EN CSS ES IMPORTANTE:siempre lo que se  escriba al final del codigo css va a tener prioridad con respecto a lo que hayamos escrito antes  */
+p.texto{
+    color: black;
+}
+
+div p /* Se indica que todas las etiquetas de p que se encuentren DENTRO DE UNA ETIQUETA DE DIV se les assigna un estilo. OJO: El estilo no se aplico a ningun "p" anterior*/
+{
+    color: red;
+}
+
+div h4 , div h5/* Para asignar a otra etiqueta dentro del div se usa ","*/
+/* Si quieres seleccionar todos los h5 solo escribes h5, pero si SOLO quieres el h5 que está dentro de un div entonces: */
+{
+    color: brown;
+}
+* /* Selector "*" ,selecciona  ABSOLUTAMENTE TODOS  los elementos de hlml  y SOLO aplica las propiedades que no han sido definidas por otros selectores  */
+{
+    font-size: 24px;
+}
+
